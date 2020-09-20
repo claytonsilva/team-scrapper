@@ -1,7 +1,13 @@
 {
   "name": "team-scrapper",
   "version": "0.1.0",
+  "author": {
+    "email": "clayton.deploy@gmail.com",
+    "name": "Clayton Santos da Silva",
+    "url": "https://medium.com/@claytonssilva"
+  },
   "private": false,
+  "license": "BSD-3-Clause",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "babel src -d dist --source-maps",
@@ -45,6 +51,7 @@
     }
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "debug": "^4.1.1",
     "escriba": "^2.5.0",
     "log4js": "^5.1.0",

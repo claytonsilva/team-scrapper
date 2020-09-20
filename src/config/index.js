@@ -18,9 +18,12 @@ const envProdName = 'production'
  * @memberof config
  */
 const appConfig = {
-  appName: getEnv('APP_NAME', 'hexagonal-boilerplate'),
+  appName: getEnv('APP_NAME', 'team-scrapper'),
   isProduction: getEnv('NODE_ENV') === envProdName,
-  envName: getEnv('NODE_ENV')
+  envName: getEnv('NODE_ENV'),
+  scrapper: {
+    url: getEnv('SCRAPPER_MAIN_URL', 'https://www.flamengo.com.br/elencos/elenco-profissional')
+  }
 }
 
 /**

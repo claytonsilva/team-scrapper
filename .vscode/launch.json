@@ -14,7 +14,7 @@
             "outFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/dist/ports/http/bin/www.js"
+            "program": "${workspaceFolder}/dist/ports/console/index.js"
         },
         {
             "type": "node",

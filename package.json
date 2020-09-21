@@ -14,7 +14,7 @@
     "watch": "babel src -w -d dist --source-maps",
     "depcheck": "depcheck",
     "test-ci": "ENV_NAME=test jest --ci --reporters=jest-junit --outputFile=./test-results/jest",
-    "start": "node dist/ports/http/bin/www",
+    "start": "node dist/ports/console/index.js",
     "test": "ENV_NAME=test jest",
     "lint": "eslint -c .eslintrc src/**/*.js",
     "stryker-mutate": "stryker run",
@@ -52,6 +52,8 @@
   },
   "dependencies": {
     "axios": "^0.20.0",
+    "bluebird": "^3.7.2",
+    "cheerio": "^1.0.0-rc.3",
     "debug": "^4.1.1",
     "escriba": "^2.5.0",
     "log4js": "^5.1.0",
@@ -66,6 +68,8 @@
     "@stryker-mutator/core": "^3.2.4",
     "@stryker-mutator/javascript-mutator": "^3.2.4",
     "@stryker-mutator/jest-runner": "^3.2.4",
+    "@types/bluebird": "^3.5.32",
+    "@types/cheerio": "^0.22.21",
     "@types/jest": "^25.1.4",
     "@types/ramda": "0.26.1",
     "babel-core": "^7.0.0-bridge.0",
@@ -94,6 +98,9 @@
   },
   "resolutions": {
     "dd-trace": "^0.14.0",
-    "typescript": ">=2.8.0"
+    "typescript": ">=2.8.0",
+    "lodash": ">=4.17.12",
+    "dot-prop": ">=5.1.1",
+    "yargs-parser": ">=18.1.2"
   }
 }
